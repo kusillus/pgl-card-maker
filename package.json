@@ -1,0 +1,56 @@
+{
+  "name": "pgl-card-maker",
+  "version": "1.0.0",
+  "description": "Generador de codigo para cartilla PGL pokmeon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack -p --config ./webpack/webpack.config.js --display-error-details",
+    "watch": "webpack -d --watch --config ./webpack/webpack.config.js --display-error-details",
+    "dev": "webpack-dev-server --open --mode development -d --watch --config ./webpack/webpack.config.js --display-error-details"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/kusillus/pgl-card-maker.git"
+  },
+  "keywords": [
+    "pgl",
+    "pokemon",
+    "vgc",
+    "3ds"
+  ],
+  "author": "Alexander Guevara Benites (kusillus)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kusillus/pgl-card-maker/issues"
+  },
+  "homepage": "https://github.com/kusillus/pgl-card-maker#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.24.6",
+    "browser-sync-webpack-plugin": "^2.2.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.2.0",
+    "eslint-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^1.1.11",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^4.0.0-alpha",
+    "node-sass": "^4.9.2",
+    "postcss": "^7.0.1",
+    "postcss-import": "^11.1.0",
+    "postcss-loader": "^2.1.6",
+    "postcss-preset-env": "^5.2.3",
+    "pug": "^2.0.3",
+    "pug-html-loader": "^1.1.5",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "stylelint": "^8.4.0",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  }
+}
